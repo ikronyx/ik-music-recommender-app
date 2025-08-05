@@ -14,9 +14,9 @@ async function getRecommendations() {
 
     resultsDiv.innerHTML = data.recommendations.map(song => `
       <div class="result-item">
-        <strong>${song.track_name}</strong><br>
-        ${song.artist_name} (${song.genre})<br>
-        <a class="spotify-button" href="${song.spotify_url}" target="_blank">🎧 Listen on Spotify</a>
+        <strong class="result-title">${song.track_name}</strong>
+        <p class="result-artist">${song.artist_name} (${song.genre})</p>
+        <p><a class="spotify-button" href="${song.spotify_url}" target="_blank">🎧 Listen on Spotify</a></p>
       </div>
     `).join('');
   } catch (error) {
