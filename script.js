@@ -12,11 +12,11 @@ async function getRecommendations() {
       return;
     }
 
-    resultsDiv.innerHTML = data.map(song => `
+    resultsDiv.innerHTML = data.recommendations.map(song => `
       <div class="result-item">
         <strong>${song.track_name}</strong><br>
         ${song.artist_name} (${song.genre})<br>
-        🎵 Valence: ${song.valence.toFixed(2)}, Energy: ${song.energy.toFixed(2)}, Danceability: ${song.danceability.toFixed(2)}
+        <a href="${song.spotify_url}" target="_blank">🎧 Listen on Spotify</a>
       </div>
     `).join('');
   } catch (error) {
