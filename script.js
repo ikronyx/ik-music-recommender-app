@@ -4,7 +4,7 @@ async function getRecommendations() {
   resultsDiv.innerHTML = "Loading...";
 
   try {
-    const res = await fetch(`https://music-recommender-api-production.up.railway.app/recommend?mood=${mood}`);
+    const res = await fetch(`https://ik-music-recommender-railway-production.up.railway.app//recommend?mood=${mood}`);
     const data = await res.json();
 
     if (data.error) {
