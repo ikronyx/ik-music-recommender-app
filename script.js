@@ -16,7 +16,7 @@ async function getRecommendations() {
       <div class="result-item">
         <strong>${song.track_name}</strong><br>
         ${song.artist_name} (${song.genre})<br>
-        <a href="${song.spotify_url}" target="_blank">🎧 Listen on Spotify</a>
+        <a class="spotify-button" href="${song.spotify_url}" target="_blank">🎧 Listen on Spotify</a>
       </div>
     `).join('');
   } catch (error) {

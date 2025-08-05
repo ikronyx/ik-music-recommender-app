@@ -46,3 +46,12 @@ button:hover {
   margin: 10px 0;
   border-radius: 10px;
 }
+
+.spotify-button {
+  background-color: #1DB954;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
